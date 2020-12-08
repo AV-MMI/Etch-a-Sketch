@@ -1,0 +1,86 @@
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+    font-weight: normal;
+    font-style: normal;
+	src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+
+body {
+	background-image: url('../img/Black-sand.jpeg');
+	background-repeat: no-repeat;
+    color: white;
+}
+
+/*Classes*/
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0;
+  cursor: pointer;
+  background-color: #212529;
+  border: none;
+  padding: 5px;
+}
+
+.btn:hover {
+	background-color: #293241;
+}
+
+.icon {
+	width: 35px;
+}
+
+.active {
+	background-color: #3d5a80;
+}
+
+
+.right {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+/*ID*/
+#heading-div {
+	background-color: #212529;
+	width: 370px;
+	height: 100px;
+	margin-top: 20px;
+	margin-bottom: 80px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-family: 'PlayfairDisplay';
+	font-size: 60px;
+
+}
+
+#container-div {
+	display: flex;
+	width: 760px;
+	margin: 0 auto;
+}
+
+#screen-div {
+	background-color: #FFFFFF;
+	width: 700px;
+	height: 500px;
+}
+
+#menu-div {
+	width: 60px;
+	height: 370px;
+	background-color: #343a40;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#footer-div {
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+}
