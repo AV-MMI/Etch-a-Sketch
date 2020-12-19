@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="Css/reset.css">
+	<link rel="stylesheet" href="Css/styles.css">
 	<title>Etch-a-Sketch</title>
 </head>
 
@@ -12,33 +12,48 @@
 	<div id="heading-div">
 		<h1>Do you feel like drawing?</h1>
 	</div>
-	<div id="container-div">
-		<div id="screen-div"></div>
-		<div id="menu-div" class="right">
 
+	<div id="main-div">
+		<div id="content-div">
+			<h2>Martin Gayford</h2>
+			<p>“Drawing makes you see things clearer, and clearer, and clearer still. The image is passing through you in a physiological way, into your brain, into your memory – where it stays – it’s transmitted by your hands.”</p>
+		</div>
+
+		<div id="container-div">
+      <div id="screen">
+        <div id="canvas-div"></div>
+      </div>
+
+		<div id="menu-div" class="right">
 			<div id="change-side-div">
-				<button class="btn" title="Change side"><img class="icon" src="./img/icons/change-arrows.svg" alt=""></button>
+				<button class="btn" id="changeSide" title="Change side"><img class="icon" src="./Img/icons/change-arrows.svg" alt=""></button>
 			</div>
 			<div id="pencil-div">
-				<button class="btn" title="Gray Scale"><img class="icon" src="./img/icons/pencil.svg" alt=""></button>
+				<button class="btn" id="pencil" title="Black color"><img class="icon" src="./Img/icons/pencil.svg" alt=""></button>
 			</div>
 			<div id="colored-pencils-div">
-				<button class="btn" title="Aleatory raimbow colors"><img class="icon" src="./img/icons/colored-pencils.svg" alt=""></button>
+				<button class="btn" id="coloredPencils" title="Aleatory raimbow colors"><img class="icon" src="./Img/icons/colored-pencils.svg" alt=""></button>
 			</div>
 			<div id="color-picker-div">
-				<button class="btn" title="Pick your own color!"><img class="icon" src="./img/icons/color-picker.svg" alt=""></button>
+				<button class="btn" id="colorPicker" title="Pick your own color!"><input id="colorPickerHead" type="color"></button>
 			</div>
 			<div id="pixels-div">
-				<button class="btn" title="Wanna more or less pixels?"><img class="icon" src="./img/icons/pixels.svg" alt=""></button>
+				<button class="btn" id="pixels" title="Wanna more or less pixels?"><img class="icon" src="./Img/icons/pixels.svg" alt=""></button>
 			</div>
+      <div id="darkener-div"><button id="darkener-btn" class="btn"><span>Gray</span></button></div>
+      <div id="clear-div">
+        <button class="btn" id="clear"><span>Clear</span></button>
+      </div>
 		</div>
+		</div>
+
 	</div>
 	<footer id="footer-div">
 		<div id="github-div">
-			<a href="https://github.com/AV-MMI/"><img src="./img/icons/GitHub-Mark-Light-32px.png" alt=""></a>
+			<a href="https://github.com/AV-MMI/"><img src="./Img/icons/GitHub-Mark-Light-32px.png" alt=""></a>
 		</div>
 	</footer>
 </body>
 
-<script src='./index.js'></script>
+<script src='./script.js'></script>
 </html>
